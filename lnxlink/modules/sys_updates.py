@@ -55,6 +55,7 @@ class Addon:
                 "entity_category": "diagnostic",
                 "value_template": "{{ value_json.packages.updates | count }}",
                 "attributes_template": "{{ value_json.packages | tojson }}",
+                "state_class": "measurement",
                 "enabled": False,
             },
         }
